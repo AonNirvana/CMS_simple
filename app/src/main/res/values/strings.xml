@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CMS_simple</string>
+
+    <string name="button_create">Create</string>
+    <string name="button_review">Review</string>
+
+    <string name="edittext_key">Article Name</string>
+    <string name="edittext_col">Article Content</string>
+    <string name="button_confirm">Confirm</string>
+
+    <string name="button_reset">Reset</string>
+    <string name="button_delete">Delete</string>
+</resources>
