@@ -62,7 +62,6 @@ public class ViewActivity extends AppCompatActivity implements ViewFragment.OnFr
      * @param view Nothing else in particular.
      */
     public void createToMain(View view) {
-        manager.unregisterListener(this,quake);
         Intent intent = new Intent(ViewActivity.this,MainActivity.class);
         startActivity(intent);
         finish();
@@ -108,7 +107,6 @@ public class ViewActivity extends AppCompatActivity implements ViewFragment.OnFr
         if(Math.sqrt(x + y + z) < 2.7) {return;}
         else {
             //return to main without save.
-            manager.unregisterListener(this,quake);
             Intent intent = new Intent(ViewActivity.this,MainActivity.class);
             startActivity(intent);
             finish();

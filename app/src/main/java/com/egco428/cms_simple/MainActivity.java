@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
      * @param view Nothing else in particular.
      */
     public void mainToCreate(View view) {
-        manager.unregisterListener(this,flirt);
         Intent intent = new Intent(MainActivity.this,CreateActivity.class);
         startActivity(intent);
         finish();
@@ -45,7 +44,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
      * @param view Nothing else in particular.
      */
     public void mainToView(View view) {
-        manager.unregisterListener(this,flirt);
         Intent intent = new Intent(MainActivity.this,ViewActivity.class);
         startActivity(intent);
         finish();
@@ -73,13 +71,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             finish();
         }
         if(event.values[1] > 1.5) {
-            manager.unregisterListener(this,flirt);
             Intent intent = new Intent(MainActivity.this,CreateActivity.class);
             startActivity(intent);
             finish();
         }
         if(event.values[1] < -1.5) {
-            manager.unregisterListener(this,flirt);
             Intent intent = new Intent(MainActivity.this,ViewActivity.class);
             startActivity(intent);
             finish();
